@@ -3,19 +3,18 @@
 #include "DHT.h"
 
 // ====== CONFIG ======
-#define WIFI_SSID "your_wifi_name"
-#define WIFI_PASS "your_wifi_password"
+#define WIFI_SSID "OPPO A5 5G x3b4"
+#define WIFI_PASS "gbig4735"
 
-#define DHTPIN 4          // GPIO where your DHT22 data pin is connected
-#define DHTTYPE DHT22     // Sensor type
+#define DHTPIN 4          
+#define DHTTYPE DHT22   
 #define DEVICE_ID "envBot_01"
-
-#define ENDPOINT_URL "https://your-vercel-endpoint.vercel.app/api/logData"  // Change this!
+#define ENDPOINT_URL "https://prs-tech-project-portal/api/brain"
 
 // ====== SETUP ======
 DHT dht(DHTPIN, DHTTYPE);
 unsigned long lastPost = 0;
-const unsigned long postInterval = 10000; // 10 seconds between readings
+const unsigned long postInterval = 100000; 
 
 void setup() {
   Serial.begin(115200);
