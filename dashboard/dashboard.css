@@ -21,13 +21,13 @@ body {
     font-size: 3rem;
     font-weight: 800;
     margin: 10px 0;
-    background: linear-gradient(90deg, #ff006e, #9d00ff);
+    background: linear-gradient(90deg, #00d4ff, #0066ff);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .title span, .ai-title span {
-    background: linear-gradient(90deg, #ae00ff, #ff0000);
+    background: linear-gradient(90deg, #00aaff, #00e5ff);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -40,8 +40,9 @@ body {
 
 input:focus{
     outline:none;
-    border:1px solid #FFC7FD;
+    border:1px solid #7fd9ff;
 }
+
 /* CARDS */
 .cards {
     display: flex;
@@ -56,10 +57,8 @@ input:focus{
     width: 180px;
     border-radius: 15px;
     
-    /* NEW: Gradient Border */
-    border: 1px solid #FF0EF4;
-    /* Glow */
-    box-shadow: 0 0 15px rgba(255, 0, 200, 0.25);
+    border: 1px solid #00c8ff;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.25);
 }
 
 .card h2 {
@@ -84,7 +83,7 @@ input:focus{
     margin: 20px auto;
     border: 3px solid transparent;
     background-clip: padding-box;
-    box-shadow: 0 0 12px rgba(255,0,150,0.4);
+    box-shadow: 0 0 12px rgba(0,150,255,0.4);
     max-width: 650px;
 }
 
@@ -100,7 +99,7 @@ input:focus{
     width: 70%;
     padding: 10px 14px;
     border-radius: 20px;
-    border: 2px solid #ff00f5;
+    border: 2px solid #00baff;
     background: #000;
     color: white;
     font-size: 1rem;
@@ -108,7 +107,7 @@ input:focus{
 
 .ask-area button {
     padding: 10px 20px;
-    background: linear-gradient(90deg, #ff00b8, #8000ff);
+    background: linear-gradient(90deg, #00c6ff, #005eff);
     border: none;
     color: white;
     border-radius: 20px;
@@ -131,7 +130,7 @@ input:focus{
     display: inline-block;
     margin-top: 10px;
     padding: 10px 25px;
-    border: 2px solid #ff00d4;
+    border: 2px solid #00baff;
     border-radius: 14px;
     text-decoration: none;
     color: white;
