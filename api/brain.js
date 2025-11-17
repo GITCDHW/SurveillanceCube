@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     const today = new Date().toISOString().slice(0, 10);
     const sessionRef = db.ref(`machineLogs/${machineID}/${today}`);
     
-    // Ensure session exists
+    // Ensre session exists
     const sessionSnap = await sessionRef.get();
     if (!sessionSnap.exists()) {
       await sessionRef.set({
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
     const logs = allLogsSnap.val() || {};
     const logCount = Object.keys(logs).length;
     
-    // If enough logs, and no summary yet, call Gemini
+    // If enugh logs, and no summary yet, call Gemini
     const session = sessionSnap.val() || {};
     if (logCount >= 4 && !session.summary) {
       const logsArray = Object.values(logs);
